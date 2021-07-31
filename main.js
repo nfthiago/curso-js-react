@@ -7,7 +7,7 @@ import PlayerScore from "./src/components/PlayerScore"
 const $root = document.querySelector("#root");
 
 const $htmlBoardGame = BoardGame(6);
-const $htmlPlayerScore = PlayerScore(1);
+// const $htmlPlayerScore = PlayerScore(1);
 
-$root.insertAdjacentHTML("beforebegin", $htmlPlayerScore);
+// $root.insertAdjacentHTML("beforebegin", $htmlPlayerScore);
 $root.insertAdjacentHTML("beforeend", $htmlBoardGame);
