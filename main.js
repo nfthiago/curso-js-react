@@ -1,13 +1,17 @@
 import "./src/styles/settings/colors.css"
-import "./src/styles/elements/base.css"
 import "./src/styles/generic/reset.css"
+import "./src/styles/elements/base.css"
 import BoardGame from "./src/objects/BoardGame";
-import PlayerScore from "./src/components/PlayerScore"
+import PlayerName from "./src/components/CardGame/PlayerName";
 
 const $root = document.querySelector("#root");
 
-const $htmlBoardGame = BoardGame(6);
-// const $htmlPlayerScore = PlayerScore(1);
 
-// $root.insertAdjacentHTML("beforebegin", $htmlPlayerScore);
-$root.insertAdjacentHTML("beforeend", $htmlBoardGame);
+$root.insertAdjacentHTML(
+    "beforeend",
+    `
+    ${PlayerName('Player1')} 
+    ${PlayerName('Player2')} 
+    ${BoardGame(6)}
+    `
+);
