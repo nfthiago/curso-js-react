@@ -1,0 +1,16 @@
+.arrow-zone{
+    padding-top: 1rem;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    width: 10rem;
+    height: 1rem;
+}
+
+.arrow-zone > .arrow-down{
+margin: 0%;
+}
+
+.arrow-down.-change {
+margin: 80%;
+}
